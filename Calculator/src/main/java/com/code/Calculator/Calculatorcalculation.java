@@ -1,6 +1,14 @@
 package com.code.Calculator;
 import java.util.*;
-public class Calculatorcalculation {
+interface operations
+{
+	public int add(int a,int b);
+	public int subtract(int a,int b);
+	public int divide(int a,int b);
+	public int multiply(int a,int b);
+	public int modulus(int a,int b);
+}
+public class Calculatorcalculation implements operations {
 	
 	// Function to Add 2 numbers
 		public int add(int a,int b) {
